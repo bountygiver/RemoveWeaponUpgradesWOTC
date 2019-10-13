@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>63e9c5b9-b301-4dd6-a3f0-f72f884209d3</Guid>
+    <Name>RemoveWeaponUpgradesWOTC</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>RemoveWeaponUpgradesWOTC</AssemblyName>
+    <RootNamespace>RemoveWeaponUpgradesWOTC</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\RemoveWeaponUpgradesWOTC\" />
+    <Folder Include="Src\RemoveWeaponUpgradesWOTC\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Localization\RemoveWeaponUpgradesWOTC.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\RemoveWeaponUpgradesWOTC\Classes\NewWeapUpgradeItem.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RemoveWeaponUpgradesWOTC\Classes\UISL_ImplantsRemoval.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RemoveWeaponUpgradesWOTC\Classes\UISL_WeaponUpgradeListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RemoveWeaponUpgradesWOTC\Classes\X2DownloadableContentInfo_RemoveWeaponUpgradesWOTC.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
